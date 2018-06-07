@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:c="http://www.springframework.org/schema/c"      
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+ <!-- Autowire byType --> 
+ 
+<bean id="mobile" class="com.krishna.Mobile" p:id="1010" p:model="MiNote5 pro" autowire="byType"/>    
+<bean id="sim" class="com.krishna.Sim" c:simId="11101" c:provider="jio"/>  
+<bean id="sim1" class="com.krishna.Sim" c:simId="11102" c:provider="vodafone" primary="true"/>  
+
+<!--  Autowire  byName-->
+
+<!--  
+<bean id="mobile" class="com.krishna.Mobile" p:id="1010" p:model="MiNote5 pro" autowire="byName"/>  
+ <bean id="sim" class="com.krishna.Sim" c:simId="11101" c:provider="jio" /> 
+-->
+<!--  Autowire  constructor-->
+
+
+</beans>  
